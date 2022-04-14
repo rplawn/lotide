@@ -1,9 +1,9 @@
 //assertEqual function
 const assertEqual = function(actual, expected) {
   if (actual === expected) {
-    console.log(`Assertion Passed: ${actual} âœ…âœ…âœ… ${expected}`);
+    console.log(`Assertion Passed: ${actual} ✅✅✅ ${expected}`);
   } else {
-    console.log(`Assertion Failed: ${actual} ðŸ›‘ðŸ›‘ðŸ›‘ ${expected}`);
+    console.log(`Assertion Failed: ${actual} 🛑🛑🛑 ${expected}`);
   }
 };
 

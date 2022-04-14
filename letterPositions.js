@@ -27,7 +27,7 @@ const assertArraysEqual = function(Array1, Array2) {
 };
 
 
-
+// We'll implement a new function letterPositions which will return all the indices (zero-based positions) in the string where each character is found.
 //letterPositions function
 const letterPositions = function(sentence) {
   //variable
