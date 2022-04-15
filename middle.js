@@ -1,28 +1,7 @@
-//eqArrays function
-const eqArrays = function(Array1, Array2) {
-  if (Array.isArray(Array1) &&
-  Array.isArray(Array2)) {
-    for (const [i, value] of Array1.entries()) {
-      const value2 = Array2[i];
-      if (value !== value2) {
-        return false;
-      }
-    }
-    
-  } return true;
-};
+const eqArrays = require(`./eqArrays`);
+const assertArraysEqual = require(`./assertArraysEqual`);
 
-
-//assertArraysEqual function
-const assertArraysEqual = function(Array1, Array2) {
-  if (eqArrays(Array1, Array2)) {
-    console.log(`Assertion Passed: ${Array1} ✅✅✅ ${Array2}`);
-  } else {
-    console.log(`Assertion Failed: ${Array1} 🛑🛑🛑 ${Array2}`);
-  }
-};
-
-//Implement middle which will take in an array and return the middle-most element(s) of the given array.
+// Middle function
 const middle = function(array) {
   const mid = (array.length / 2);
   const result = [];
@@ -41,4 +20,4 @@ const middle = function(array) {
   return result;
 };
 
-middle([3, 4, 5, 6, 7, 8, 9, 10]);
+module.exports = middle;
