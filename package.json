@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@rplawn/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "List of lotide library with functions to execute code",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/rplawn/lotide.git"
   },
-  "author": "",
+  "author": "RP",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/rplawn/lotide/issues"
