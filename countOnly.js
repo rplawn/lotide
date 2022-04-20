@@ -23,7 +23,7 @@ const results = {};
 return results;
 };
 
-
+module.exports = countOnly;
 
 //Test code
 const firstNames = [

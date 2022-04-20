@@ -22,6 +22,7 @@ const countLetters = function(string) {
   return count;
 };
 
+module.exports = countLetters;
 
 console.log(countLetters("LHL"));
 console.log(countLetters("I have the cutest bunny"));

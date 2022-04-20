@@ -41,4 +41,6 @@ const without = function(Array1, Array2) {
   }
 };
 
+module.exports = without;
+
 console.log(without([1,2,3],[1]));

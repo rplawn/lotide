@@ -11,5 +11,6 @@ const takeUntil = function(arr, callback) {
   return results;
 }
 
+module.exports = takeUntil;
 
 console.log(takeUntil([1,2,3,4,5,6,7], 7));
