@@ -24,23 +24,10 @@ const assertArraysEqual = function(Array1, Array2) {
 
 
 //Implement without which will return a subset of a given array, removing unwanted elements.
-const without = function(Array1, Array2) {
-  if (Array.isArray(Array1) &&
-  Array.isArray(Array2)) {
-    let newArray1 = [...Array1];
-    for (const [i, value] of newArray1.entries()) {
-      for (const [j, value2] of Array2.entries()) {
-        if (value === value2) {
-          newArray1.splice(i,1);
-        }
-      }
-    }
-    return newArray1;
-  } else {
-    console.log("Both are not arrays.");
-  }
+const without = function(arrOne, arrTwo) {
+  return arrOne.filter(x => !arrTwo.includes(x));
 };
 
 module.exports = without;
 
-console.log(without([1,2,3],[1]));
+console.log(without([1,1,2,3],[1]));

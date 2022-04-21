@@ -2,7 +2,7 @@
 const takeUntil = function(arr, callback) {
   let results = [];
   for (let item of arr) {
-    if (item === callback) {
+    if (callback(item)) {
       break;
     } else {
       results.push(item);
@@ -13,4 +13,4 @@ const takeUntil = function(arr, callback) {
 
 module.exports = takeUntil;
 
-console.log(takeUntil([1,2,3,4,5,6,7], 7));
+console.log(takeUntil([1, 2, 5, 7, 2, -1, 2, 4, 5], x => x === 5));
