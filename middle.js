@@ -8,7 +8,7 @@ const middle = function(array) {
     //checking if array is even
   
   } else if ((array.length % 2 === 0)) {
-    result.push(array[mid], array[mid - 1]);
+    result.push(array[mid - 1], array[mid]);
     //when array is neither and therefore odd
   } else {
     const midOdd = ((array.length - 1) / 2);
@@ -18,3 +18,4 @@ const middle = function(array) {
 };
 
 module.exports = middle;
+middle([1,2,3,4,5,6])
