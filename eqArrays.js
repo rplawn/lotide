@@ -1,16 +1,16 @@
 // eqArrays function
-const eqArrays = function(Array1, Array2) {
-  if (Array.isArray(Array1) &&
-  Array.isArray(Array2) && Array1.length === Array2.length) {
-    for (const [i, value] of Array1.entries()) {
-      const value2 = Array2[i];
-      if (value === value2) {
-        return true;
-      }
+const eqArrays = function(arr1, arr2) {
+  if (arr1.length !== arr2.length) {
+    return false;
+  }
+  for (let i = 0; i < arr1.length; i++) {
+    if (arr1[i] !== arr2[i]) {
+      return false;
     }
-    
-  } return false;
+  }
+  return true;
 };
 
+console.log(eqArrays([1,4],[2,4]));
 module.exports = eqArrays;
 
